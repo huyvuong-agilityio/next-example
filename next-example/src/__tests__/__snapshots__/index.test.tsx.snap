@@ -4,8 +4,11 @@ exports[`Home renders homepage unchanged 1`] = `
 <div>
   <div>
     <h1>
-      Next App
+      name
     </h1>
+    <button>
+      Get user
+    </button>
   </div>
 </div>
 `;
