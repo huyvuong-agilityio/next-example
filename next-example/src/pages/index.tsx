@@ -12,9 +12,7 @@ export default function Home() {
       const response = await axios(window.location.href + 'api/user');
       const { data } = response;
       setUser({ ...data });
-    } catch (error) {
-      console.log(error);
-    }
+    } catch (error) {}
   };
 
   return (
