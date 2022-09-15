@@ -2,4 +2,4 @@
 . "$(dirname "$0")/_/husky.sh"
 
 cd next-example
-npx --no -- commitlint --edit ""
+npm run pre-commit-lint
