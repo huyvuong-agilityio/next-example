@@ -1,12 +1,8 @@
 import { render, screen, waitFor } from '@testing-library/react';
 import Home from '@pages/index';
-import { server } from '@mocks/server';
 import { userEvent } from '@storybook/testing-library';
 import { handlers } from '@mocks/handlers';
-
-beforeAll(() => server.listen());
-afterEach(() => server.resetHandlers());
-afterAll(() => server.close());
+import { server } from '@mocks/server';
 
 describe('Home', () => {
   test('renders homepage unchanged', () => {
