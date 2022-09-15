@@ -14,10 +14,9 @@
     "build-storybook": "build-storybook",
     "lint": "eslint src --ext .ts,.tsx",
     "lint:fix": "eslint src --ext .ts,.tsx --fix",
-    "pre-commit-lint": "pnpm ci",
+    "pre-commit-lint": "pnpm lint-staged && pnpm test",
     "prepare": "cd .. && husky install next-example/.husky",
-    "lint-staged": "npx lint-staged",
-    "ci": "pnpm lint-staged && pnpm test"
+    "lint-staged": "npx lint-staged"
   },
   "dependencies": {
     "next": "latest",
