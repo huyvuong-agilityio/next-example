@@ -18,6 +18,7 @@ describe('Home', () => {
     const button = screen.findByRole('button');
     button.then((element) => {
       userEvent.click(element);
+      expect(screen.getByText(/loading.../i)).toBeInTheDocument();
     });
 
     await waitFor(
